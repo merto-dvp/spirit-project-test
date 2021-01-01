@@ -23,5 +23,9 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io
 sudo docker run hello-world
 sudo snap install --classic code
 docker-compose --version
-
+sudo groupadd docker
+sudo usermod -aG docker $USER
+newgrp docker
+sudo systemctl enable docker
+sudo systemctl start docker 
 sudo chown -R $USER:$USER .
