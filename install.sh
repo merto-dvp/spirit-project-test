@@ -23,3 +23,5 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io
 sudo docker run hello-world
 sudo snap install --classic code
 docker-compose --version
+
+sudo chown -R $USER:$USER .
